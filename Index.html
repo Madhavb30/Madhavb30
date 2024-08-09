@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Info Hub</title>
+    <style>
+        body {
+            background-color: #FFF7E6;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FFA726;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            background-color: #FFA726;
+            color: #000;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .news, .colleges {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #FFA726;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            background-color: #FFE0B2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="submit"] {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"] {
+            background-color: #FFA726;
+            color: #000;
+            border: none;
+        }
+    </style>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>College Info Hub</h1>
+        <p>Your go-to source for college news and information</p>
+    </header>
+    <nav>
+        <a href="#news">News</a>
+        <a href="#colleges">Colleges</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+    <div class="content">
+        <section id="news" class="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>News Article 1</h3>
+                <p>Details about news article 1.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article>
+                <h3>News Article 2</h3>
+                <p>Details about news article 2.</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+        <section id="colleges" class="colleges">
+            <h2>Colleges Information</h2>
+            <article>
+                <h3>College 1</h3>
+                <p>Details about college 1.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article>
+                <h3>College 2</h3>
+                <p>Details about college 2.</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+        <section id="subscribe">
+            <h2>Submit Your Details</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 College Info Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
